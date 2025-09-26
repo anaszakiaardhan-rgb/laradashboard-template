@@ -235,6 +235,17 @@ class AdminMenuService
             ',
         ], __('More'));
 
+        // Siswa menu
+        $this->addMenuItem([
+            'label' => __('Siswa'),
+            'icon' => 'lucide:users',
+            'route' => route('admin.siswas.index'),
+            'active' => Route::is('admin.siswas.*'),
+            'id' => 'siswa',
+            'priority' => 15,
+            'permissions' => 'siswa.view',
+        ]);
+
         $this->groups = Hook::applyFilters(AdminFilterHook::ADMIN_MENU_GROUPS_BEFORE_SORTING, $this->groups);
 
         $this->sortMenuItemsByPriority();

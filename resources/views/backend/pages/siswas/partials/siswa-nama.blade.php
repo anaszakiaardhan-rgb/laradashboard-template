@@ -1,0 +1,1 @@
+<span>{{ $siswa->nama }}</span>

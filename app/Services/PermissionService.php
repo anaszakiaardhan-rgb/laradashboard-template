@@ -121,6 +121,15 @@ class PermissionService
                     'ai_content.generate',
                 ],
             ],
+            [
+                'group_name' => 'siswa',
+                'permissions' => [
+                    'siswa.create',
+                    'siswa.view',
+                    'siswa.update',
+                    'siswa.delete',
+                ],
+            ],
         ];
 
         return $permissions;

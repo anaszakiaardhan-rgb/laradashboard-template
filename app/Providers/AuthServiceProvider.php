@@ -39,6 +39,7 @@ class AuthServiceProvider extends ServiceProvider
         Setting::class => SettingPolicy::class,
         Module::class => ModulePolicy::class,
         ActionLog::class => ActionLogPolicy::class,
+        \App\Models\Siswa::class => \App\Policies\SiswaPolicy::class,
     ];
 
     /**
